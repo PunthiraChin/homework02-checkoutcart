@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+    
+* {
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Sarabun", sans-serif;
+}
+html{
+    background: darkgray;
+}
+body{
+    width:1000px;
+    margin:auto;
+    background-color: #eee;
+}
+
+header{
+    width:100%;
+    padding-inline:10%;
+    height:50px;
+    margin-inline:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0px;
+    background-color: #eee;
+    border-bottom:1px solid grey;
+    font-size:12px;
+}
+header > div {
+    height:100%;
+}
+main{
+    width:80%;
+    margin-inline:auto;
+    min-height:400px;
+}
+a {
+    text-decoration:none;
+    color:black;
+}
+a:hover{
+    color: #2ca9bc;
+    transform:scaleX(1.2) scaleY(1.2);
+}
+button{
+    padding-block:8px;
+    border-radius: 8px;
+    border:1px solid #2ca9bc;
+    color:#2ca9bc;
+    background-color: white;
+}
+.company-logo{
+    display: flex;
+    align-items:center;
+    gap:8px;
+    font-size:20px;
+    letter-spacing:-0.5px;
+}
+.company-logo  span{
+    font-weight: bold;
+}
+.center-nav{
+    display:flex;
+    align-items:center;
+}
+.center-nav a{
+    margin-inline:8px;
+}
+.right-navbar{
+    display:flex;
+    align-items:center;
+}
+.right-navbar>a{
+    padding:0px 8px 0px 8px;
+}
+.right-navbar > a:last-child{
+    border-left:1px solid grey;
+}
+.cart {
+    position:relative;
+}
+.cart > div {
+    width:16px;
+    height:16px;
+    border-radius: 50%;
+    background-color: red;
+    font-size:12px;
+    color:white;
+    position:absolute;
+    top:-4px;
+    right:-4px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+/* MAIN */
+
+main >.my-cart{
+    height:100px;
+    padding:40px 0px 20px 0px;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.order-details{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:24px;
+}
+.item-list{
+    min-width:400px;
+    /* flex-shrink:0; */
+}
+.items{
+    margin-bottom:16px;
+    background-color: white;
+    border-radius:8px;
+    box-shadow: 7px 6px 5px -3px rgba(145,143,145,0.5);
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+    gap:8px;
+    height:150px;
+}
+.items>div{
+    padding-inline:8px;
+}
+.items .delete-item{
+    width:32px;
+    height:32px;
+    border:1px solid #2ca9bc;
+    border-radius:50%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.product-photo{
+    width:120px;
+    height:120px;
+    background-color:lightblue;
+    border-radius: 16px;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:flex-start;
+    padding:16px;
+}
+.product-photo >div:first-child{
+    background-color: white;
+    padding:4px;
+    border-radius: 4px;
+}
+.product-photo>div{
+    font-size:12px;
+    color:white;
+}
+.items .product-details{
+    padding-right:32px;
+}
+.product-details >div{
+    margin-bottom:8px;
+}
+.level{
+    display:flex;
+    align-items:center;
+}
+.level > span{
+    width:10px;
+    height:10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-right:2px;
+}
+.level > span.level-select{
+    background-color: #2ca9bc;
+}
+/* Order Summaty */
+.order-summary{
+    outline:1px solid #ccc;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 7px 6px 5px -3px rgba(145,143,145,0.5);
+    min-width:400px;
+    padding:16px;
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+    /* flex-shrink:0; */
+    
+}
+.order-summary>.order-info{
+    font-weight:bold;
+}
+.subtotal{
+    display:flex;
+    justify-content:space-between;
+    font-size:16px;
+    color:#aaa;
+}
+.promo-code{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    gap:8px;
+}
+
+.promo-code > input {
+    flex-grow:1;
+    padding:8px;
+}
+.promo-code > button{
+    padding-inline:16px;
+}
+
+button:hover{
+    transform:scale(1.02, 1.02);
+}
+.checkout-button{
+    padding-inline:24px;
+    background-color:#2ca9bc;
+    color:black;
+}
+.total-payment{
+    display:flex;
+    justify-content:space-between;
+    font-size:16px;
+}
+.total-payment > div:last-child{
+    color:#2ca9bc;
+    font-weight: bold;
+}
